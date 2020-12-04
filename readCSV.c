@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
     // Read problem dimensions
     int n = atoi(argv[1]);
     int m = atoi(argv[2]);
-    // Allocate memory for f and x
+    // Allocate matrix
     mat = (double *) malloc(n * m * sizeof(double));
     // Open file
     if ((fp = fopen(argv[3], "r")) == NULL) {
