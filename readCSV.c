@@ -53,7 +53,7 @@ void readCSV(int n, int m, FILE *fp, double *mat) {
 int main(int argc, char *argv[]) {
     // Declare file pointers and arrays
     FILE *fp;
-	double *mat;
+    double *mat;
     // Check the command line args
     if (argc != 4) {
         printf("Error! 3 command line args expected!\n");
@@ -69,10 +69,10 @@ int main(int argc, char *argv[]) {
         printf("Error! Could not open %s\n", argv[3]);
         return -2;
     }
-	// Read the CSV file into a matrix
+    // Read the CSV file into a matrix
     printf("\nReading matrix from %s...\n", argv[3]);
-	readCSV(n, m, fp, mat);
-	// Close the file
+    readCSV(n, m, fp, mat);
+    // Close the file
     fclose(fp);
     // Print the matrix to stdout
     printf("\nThe matrix is:\n\n");
@@ -87,6 +87,6 @@ int main(int argc, char *argv[]) {
     }
     printf("\n");
     // Free memory and return
-	free(mat);
+    free(mat);
     return 0;
 }
