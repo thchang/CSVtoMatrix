@@ -27,7 +27,7 @@ void readCSV(int n, int m, FILE *fp, double *mat) {
         token = strtok(line, ",");
         // Parse the line into a row of mat
         for (int j = 0; j < m; j++) {
-		    mat[i*m + j] = strtod(token, NULL);
+            mat[i*m + j] = strtod(token, NULL);
             token = strtok(NULL, ","); // Trick to strip each entry off
         }
     }
