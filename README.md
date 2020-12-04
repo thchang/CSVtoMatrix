@@ -8,6 +8,8 @@ posted about this before, I just couldn't easily find it). So I
 wrote my own solution. Maybe the next guy/gal will find this and
 save an hour :)
 
+Note, there is no support for white spaces, this is just a simple demo...
+
 ```
 /*
  * Function: readCSV
@@ -25,3 +27,11 @@ save an hour :)
  */
 void readCSV(int n, int m, FILE *fp, double *mat)
 ```
+
+## Contents
+
+There are 4 files:
+ * `README.md` is this file
+ * `readCSV.c` is the source file
+ * `matrix.csv` is a sample matrix
+ * `Makefile` is a sample GNU makefile
